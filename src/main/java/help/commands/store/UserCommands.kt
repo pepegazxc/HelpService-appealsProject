@@ -21,5 +21,5 @@ class UserCommands {
         )
     )
 
-    fun getAll() = commands.values
+    fun getAll() = commands
 }

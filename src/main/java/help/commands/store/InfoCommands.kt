@@ -13,5 +13,5 @@ class InfoCommands {
         )
     )
 
-    fun getInfo(command: HelpCommandType) = commands[command]
+    fun getInfo() = commands
 }
