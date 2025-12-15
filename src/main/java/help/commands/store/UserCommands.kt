@@ -8,21 +8,18 @@ import org.springframework.stereotype.Component
 class UserCommands {
     private val commands: Map<HelpCommandType, HelpCommands> = mapOf(
         HelpCommandType.REGISTRATION to HelpCommands(
-            type = HelpCommandType.REGISTRATION,
             description = "This command will allow you to register yourself, or register your new account",
             command = "/register",
         ),
         HelpCommandType.CHOOSECITY to HelpCommands(
-            type = HelpCommandType.CHOOSECITY,
             description = "This command will allow you to select a city if your registered in the application",
             command = "/chooseCity"
         ),
         HelpCommandType.WRITEAPPEAL to HelpCommands(
-            type = HelpCommandType.WRITEAPPEAL,
             description = "This command will allow you to write an appeal if you have selected your city",
             command = "/writeAppeal"
         )
     )
 
-    fun getInfo(command: HelpCommandType) = commands[command]
+    fun getAll() = commands.values
 }

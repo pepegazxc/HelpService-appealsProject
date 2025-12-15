@@ -8,9 +8,8 @@ import org.springframework.stereotype.Component
 class InfoCommands {
     private val commands: Map<HelpCommandType, HelpCommands> = mapOf(
         HelpCommandType.INFO to HelpCommands(
-            type = HelpCommandType.INFO,
-            description = "You are in the help service! This command will allow you to watch list of commands",
-            command = "/commands"
+            description = "You are in the help service! Those commands will allow you to watch list of commands",
+            command = "/userCommands"
         )
     )
 
