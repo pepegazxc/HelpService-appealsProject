@@ -2,7 +2,7 @@ package help.controller;
 
 import help.commands.HelpCommandType;
 import help.commands.HelpCommands;
-import help.commands.HelpCommandsStore;
+import help.commands.store.InfoCommands;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/commands")
 public class HelpController {
 
-    private final HelpCommandsStore store;
+    private final InfoCommands store;
 
-    public HelpController(HelpCommandsStore store) {
+    public HelpController(InfoCommands store) {
         this.store = store;
     }
 
