@@ -2,5 +2,5 @@ package help.commands
 
 enum class HelpCommandType {
     INFO,
-    REGISTRATION, CHOOSECITY, WRITEAPPEAL
+    REGISTRATION, CHOOSE_CITY, WRITE_APPEAL, CHANGE_INFO
 }

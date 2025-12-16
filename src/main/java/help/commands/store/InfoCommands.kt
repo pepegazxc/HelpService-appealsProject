@@ -9,7 +9,7 @@ class InfoCommands {
     private val commands: Map<HelpCommandType, HelpCommands> = mapOf(
         HelpCommandType.INFO to HelpCommands(
             description = "You are in the help service! Those commands will allow you to watch list of commands",
-            command = "/--user-commands"
+            command = "--user-commands <- will show you commands for your account"
         )
     )
 
