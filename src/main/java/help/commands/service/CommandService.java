@@ -22,7 +22,7 @@ public class CommandService {
 
     public Map<HelpCommandType,HelpCommands> handle(UserRequest dto){
         if (dto.getCommand() == null) return info.getInfo();
-        if (dto.getCommand().equals("--user-commands")) return user.getAll();
+        if (dto.getCommand().equals("user -commands")) return user.getAll();
         throw new IllegalArgumentException("Unknown command");
     }
 }
