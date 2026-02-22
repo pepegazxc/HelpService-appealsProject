@@ -3,8 +3,10 @@ package help.commands.service;
 import help.commands.dto.commands.HelpCommandType;
 import help.commands.dto.commands.HelpCommands;
 import help.commands.dto.request.UserRequest;
+import help.commands.dto.response.CommandsResponse;
 import help.commands.store.InfoCommands;
 import help.commands.store.UserCommands;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
@@ -20,9 +22,9 @@ public class CommandService {
         this.user = user;
     }
 
-    public Map<HelpCommandType,HelpCommands> handle(UserRequest dto){
+    public ResponseEntity<CommandsResponse> handle(UserRequest dto){
         if (dto.getCommand() == null) return info.getInfo();
-        if (dto.getCommand().equals("user -commands")) return user.getAll();
+        if (dto.getCommand().equals("user -commands")) return user.userCommands();
         throw new IllegalArgumentException("Unknown command");
     }
 }
