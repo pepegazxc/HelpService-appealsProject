@@ -1,7 +1,6 @@
 package help.commands.store
 
-import help.commands.HelpCommandType
-import help.commands.HelpCommands
+import help.commands.dto.commands.HelpCommandType
 import org.springframework.stereotype.Component
 
 @Component

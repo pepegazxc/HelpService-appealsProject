@@ -1,8 +1,8 @@
 package help.controller;
 
-import help.commands.HelpCommandType;
-import help.commands.HelpCommands;
-import help.commands.dto.UserRequest;
+import help.commands.dto.commands.HelpCommandType;
+import help.commands.dto.commands.HelpCommands;
+import help.commands.dto.request.UserRequest;
 import help.commands.service.CommandService;
 import org.springframework.web.bind.annotation.*;
 

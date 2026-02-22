@@ -1,8 +1,8 @@
 package help.commands.service;
 
-import help.commands.HelpCommandType;
-import help.commands.HelpCommands;
-import help.commands.dto.UserRequest;
+import help.commands.dto.commands.HelpCommandType;
+import help.commands.dto.commands.HelpCommands;
+import help.commands.dto.request.UserRequest;
 import help.commands.store.InfoCommands;
 import help.commands.store.UserCommands;
 import org.springframework.stereotype.Service;

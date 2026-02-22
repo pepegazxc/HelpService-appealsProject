@@ -1,4 +1,4 @@
-package help.commands
+package help.commands.dto.commands
 
 enum class HelpCommandType {
     INFO,
