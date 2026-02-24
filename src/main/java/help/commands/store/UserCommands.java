@@ -22,7 +22,14 @@ public class UserCommands {
                                    "This link will allow you to register",
                                     "/auth/registration"
                             )
-                    )
+                    ),
+                            new CommandsResponseItem(
+                                    HelpCommandType.REFRESH_TOKEN,
+                                    new HelpCommands(
+                                            "This link will allow you to refresh your JWT",
+                                            "/auth//token/refresh"
+                                    )
+                            )
                     )
                 )
         );
