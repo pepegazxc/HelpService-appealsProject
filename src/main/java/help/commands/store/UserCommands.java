@@ -29,8 +29,16 @@ public class UserCommands {
                                             "This link will allow you to refresh your JWT",
                                             "/auth//token/refresh"
                                     )
+                            ),
+                            new CommandsResponseItem(
+                                    HelpCommandType.WRITE,
+                                    new HelpCommands(
+                                            "This link will allow you to write an appeal",
+                                            "/appeal/write"
+                                    )
                             )
                     )
+
                 )
         );
     }
