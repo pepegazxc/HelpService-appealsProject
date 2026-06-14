@@ -1,4 +1,15 @@
 services:
+  help-service:
+    build: .
+    restart: always
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    networks:
+      - app-network
+
+
   postgres:
     image: 'postgres:latest'
     environment:
@@ -11,3 +22,7 @@ services:
     image: 'redis:latest'
     ports:
       - '6379'
+
+networks:
+  app-network:
+    driver: bridge
